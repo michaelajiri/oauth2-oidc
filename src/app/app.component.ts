@@ -29,8 +29,6 @@ export class AppComponent {
 
   get token(){
     let claims:any = this.oauthService.getIdentityClaims();
-    let token = claims ? claims : null;
-    console.log(token);
-    return token;
+    return claims? claims : null;
   }
 }
